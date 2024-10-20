@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./rock-paper-scissors.css">
+    <title>Project-TS Rock, Paper, Scissors</title>
+</head>
+<body>
+    <h1>🪨 Rock, 📜 Paper, ✂️ Scissors</h1>
+    <section class="gameWrapper">
+        <article  class="selectRounds-wrapper">
+            <h3>How many rounds?</h3>
+            <!-- same names! selecting any radio button in that group automatically deselects any currently-selected radio button in the same group -->
+            <div>
+                <input type="radio" name="roundSelection" id="fiveRounds" value="five" checked>
+                <label for="five">5</label>
+                <input type="radio" name="roundSelection" id="tenRounds" value="ten">
+                <label for="ten">10</label>
+            </div>
+            <div>
+                <input type="radio" name="roundSelection" id="fifteenRounds" value="fifteen">
+                <label for="fifteen">15</label>
+                <input type="radio" name="roundSelection" id="twentyRounds" value="twenty">
+                <label for="twenty">20</label>
+            </div>
+        </article>
+        <article class="results move-options"> <!-- rename class for flex? -->
+          <div class="circleStyle">
+            <div class="circleContent">You</div>
+          </div>  <!-- results from ts function come with textcontent -->
+            <div id="output-you">placeholder 1</div>
+            <p> : </p>
+            <div id="output-comp">ph 0</div>
+          <div class="circleStyle">
+            <div class="circleContent">Comp</div>
+          </div>  
+        </article>
+        <h2>Let's play</h2>
+        <article class="move-options">
+            <button class="circleStyle" id="rockBtn">✊🏼</button>
+            <button class="circleStyle" id="paperBtn">🤚🏼</button>
+            <button class="circleStyle" id="scissorsBtn">✌🏼</button>
+        </article>
+        <h3>MAKE YOUR MOVE</h3>
+        <button id="restartBtn">restart</button>
+    </section>
+    <script type="module" src="./rock-paper-scissors.ts"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: grey;
+
+}
+h1, h3, h2{
+    text-align: center;
+    margin: 3% 0;
+    color: blanchedalmond;
+}
+
+.gameWrapper {
+    margin: auto;
+    text-align: center;
+    padding: 1% 5% 5% 5%;
+}
+
+/* articles' styling */
+.selectRounds-wrapper, .results, .move-options{
+    border: 2px solid blanchedalmond;
+    padding-bottom: 2%;
+    width: 60vh;
+    margin: 2% auto;
+    text-align: center;
+}
+
+/* class for circle styled elements */
+.circleStyle{
+    height: 60px;
+    width: 60px;
+    background-color: teal;
+    border-radius: 50%;
+    display: block;
+    border: 1px solid blanchedalmond;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.circleContent{
+    text-align: center;
+    margin: auto;
+    font-size: 1.1rem;
+    background-color: brown;
+    color: blanchedalmond;
+    margin-top: 15px;
+}
+
+.move-options{ /* rename class for flex? */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1% 8%;
+}
+
+#restart{
+    background: none;
+    color: goldenrod;
+    font-size: 1.2rem;
+    border-style: none;
+    text-decoration: underline;
+}
